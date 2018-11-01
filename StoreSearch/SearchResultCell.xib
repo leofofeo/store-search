@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResultCell" id="dkP-HW-tln" customClass="SearchResultCell" customModule="StoreSearch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dkP-HW-tln" id="gin-AR-ebf">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="HX0-gg-spW">
+                        <rect key="frame" x="16" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="oEQ-aM-CHv"/>
+                            <constraint firstAttribute="height" constant="60" id="tZm-bg-IPQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibo-xC-Ygm">
+                        <rect key="frame" x="84" y="16" width="220" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zrm-rj-X4q">
+                        <rect key="frame" x="84" y="44" width="220" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ibo-xC-Ygm" firstAttribute="leading" secondItem="HX0-gg-spW" secondAttribute="trailing" constant="8" id="50L-ro-X81"/>
+                    <constraint firstAttribute="trailing" secondItem="ibo-xC-Ygm" secondAttribute="trailing" constant="16" id="Dgx-HE-I1l"/>
+                    <constraint firstItem="HX0-gg-spW" firstAttribute="leading" secondItem="gin-AR-ebf" secondAttribute="leading" constant="16" id="XNW-zR-pHS"/>
+                    <constraint firstAttribute="trailing" secondItem="Zrm-rj-X4q" secondAttribute="trailing" constant="16" id="cmW-uW-NcV"/>
+                    <constraint firstItem="ibo-xC-Ygm" firstAttribute="top" secondItem="gin-AR-ebf" secondAttribute="top" constant="16" id="fbl-I1-zbz"/>
+                    <constraint firstItem="HX0-gg-spW" firstAttribute="top" secondItem="gin-AR-ebf" secondAttribute="top" constant="10" id="pIq-mK-dp2"/>
+                    <constraint firstAttribute="bottom" secondItem="Zrm-rj-X4q" secondAttribute="bottom" constant="17.5" id="s1g-O4-MJe"/>
+                    <constraint firstItem="Zrm-rj-X4q" firstAttribute="leading" secondItem="HX0-gg-spW" secondAttribute="trailing" constant="8" id="u3C-ax-wVw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="artistNameLabel" destination="Zrm-rj-X4q" id="dCe-Yg-ix9"/>
+                <outlet property="artworkImageView" destination="HX0-gg-spW" id="0YT-gw-3ty"/>
+                <outlet property="nameLabel" destination="ibo-xC-Ygm" id="B2U-jK-qwI"/>
+            </connections>
+            <point key="canvasLocation" x="-566.25" y="-215.49295774647888"/>
+        </tableViewCell>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="21I-Bs-TVf">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="81" y="-332"/>
+        </label>
+    </objects>
+    <resources>
+        <image name="Placeholder" width="60" height="60"/>
+    </resources>
+</document>

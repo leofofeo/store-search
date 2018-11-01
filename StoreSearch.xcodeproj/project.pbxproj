@@ -13,6 +13,8 @@
 		4A7BF963218B90C600B78018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A7BF962218B90C600B78018 /* Assets.xcassets */; };
 		4A7BF966218B90C600B78018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7BF964218B90C600B78018 /* LaunchScreen.storyboard */; };
 		4A7BF96E218B9D0900B78018 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BF96D218B9D0900B78018 /* SearchResult.swift */; };
+		4A7BF970218BA6DC00B78018 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A7BF96F218BA6DC00B78018 /* SearchResultCell.xib */; };
+		4A7BF974218BA9A600B78018 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BF973218BA9A600B78018 /* SearchResultCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4A7BF965218B90C600B78018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A7BF967218B90C600B78018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A7BF96D218B9D0900B78018 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		4A7BF96F218BA6DC00B78018 /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
+		4A7BF973218BA9A600B78018 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,9 @@
 		4A7BF95A218B90C100B78018 /* StoreSearch */ = {
 			isa = PBXGroup;
 			children = (
+				4A7BF973218BA9A600B78018 /* SearchResultCell.swift */,
 				4A7BF95B218B90C100B78018 /* AppDelegate.swift */,
+				4A7BF96F218BA6DC00B78018 /* SearchResultCell.xib */,
 				4A7BF95D218B90C100B78018 /* SearchViewController.swift */,
 				4A7BF96D218B9D0900B78018 /* SearchResult.swift */,
 				4A7BF95F218B90C100B78018 /* Main.storyboard */,
@@ -127,6 +133,7 @@
 			files = (
 				4A7BF966218B90C600B78018 /* LaunchScreen.storyboard in Resources */,
 				4A7BF963218B90C600B78018 /* Assets.xcassets in Resources */,
+				4A7BF970218BA6DC00B78018 /* SearchResultCell.xib in Resources */,
 				4A7BF961218B90C100B78018 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +147,7 @@
 			files = (
 				4A7BF95E218B90C100B78018 /* SearchViewController.swift in Sources */,
 				4A7BF96E218B9D0900B78018 /* SearchResult.swift in Sources */,
+				4A7BF974218BA9A600B78018 /* SearchResultCell.swift in Sources */,
 				4A7BF95C218B90C100B78018 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
