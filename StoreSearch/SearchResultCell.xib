@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UITableViewCell"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResultCell" id="dkP-HW-tln" customClass="SearchResultCell" customModule="StoreSearch" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
@@ -21,6 +21,8 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="HX0-gg-spW">
                         <rect key="frame" x="16" y="10" width="60" height="60"/>
                         <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="QcV-WN-uhn"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="hje-VA-SRf"/>
                             <constraint firstAttribute="width" constant="60" id="oEQ-aM-CHv"/>
                             <constraint firstAttribute="height" constant="60" id="tZm-bg-IPQ"/>
                         </constraints>
@@ -40,11 +42,20 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="ibo-xC-Ygm" firstAttribute="leading" secondItem="HX0-gg-spW" secondAttribute="trailing" constant="8" id="50L-ro-X81"/>
+                    <constraint firstAttribute="bottom" secondItem="Zrm-rj-X4q" secondAttribute="bottom" constant="17.5" id="5R5-Qp-aQa"/>
                     <constraint firstAttribute="trailing" secondItem="ibo-xC-Ygm" secondAttribute="trailing" constant="16" id="Dgx-HE-I1l"/>
+                    <constraint firstItem="Zrm-rj-X4q" firstAttribute="leading" secondItem="HX0-gg-spW" secondAttribute="trailing" constant="8" id="PNW-pj-lqc"/>
+                    <constraint firstAttribute="trailing" secondItem="ibo-xC-Ygm" secondAttribute="trailing" constant="16" id="XDa-Zi-shf"/>
                     <constraint firstItem="HX0-gg-spW" firstAttribute="leading" secondItem="gin-AR-ebf" secondAttribute="leading" constant="16" id="XNW-zR-pHS"/>
+                    <constraint firstItem="ibo-xC-Ygm" firstAttribute="top" secondItem="gin-AR-ebf" secondAttribute="top" constant="16" id="ZqP-9U-Q3g"/>
+                    <constraint firstItem="HX0-gg-spW" firstAttribute="leading" secondItem="gin-AR-ebf" secondAttribute="leading" constant="16" id="auc-VG-z9P"/>
+                    <constraint firstAttribute="trailing" secondItem="Zrm-rj-X4q" secondAttribute="trailing" constant="16" id="c4X-nK-pWX"/>
                     <constraint firstAttribute="trailing" secondItem="Zrm-rj-X4q" secondAttribute="trailing" constant="16" id="cmW-uW-NcV"/>
                     <constraint firstItem="ibo-xC-Ygm" firstAttribute="top" secondItem="gin-AR-ebf" secondAttribute="top" constant="16" id="fbl-I1-zbz"/>
+                    <constraint firstItem="HX0-gg-spW" firstAttribute="top" secondItem="gin-AR-ebf" secondAttribute="top" constant="10" id="lCN-0I-LPI"/>
                     <constraint firstItem="HX0-gg-spW" firstAttribute="top" secondItem="gin-AR-ebf" secondAttribute="top" constant="10" id="pIq-mK-dp2"/>
+                    <constraint firstItem="Zrm-rj-X4q" firstAttribute="top" secondItem="ibo-xC-Ygm" secondAttribute="bottom" constant="6" id="pcD-Vl-46f"/>
+                    <constraint firstItem="ibo-xC-Ygm" firstAttribute="leading" secondItem="HX0-gg-spW" secondAttribute="trailing" constant="8" id="s0I-fg-hc7"/>
                     <constraint firstAttribute="bottom" secondItem="Zrm-rj-X4q" secondAttribute="bottom" constant="17.5" id="s1g-O4-MJe"/>
                     <constraint firstItem="Zrm-rj-X4q" firstAttribute="leading" secondItem="HX0-gg-spW" secondAttribute="trailing" constant="8" id="u3C-ax-wVw"/>
                 </constraints>
@@ -56,14 +67,6 @@
             </connections>
             <point key="canvasLocation" x="-566.25" y="-215.49295774647888"/>
         </tableViewCell>
-        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="21I-Bs-TVf">
-            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-            <nil key="textColor"/>
-            <nil key="highlightedColor"/>
-            <point key="canvasLocation" x="81" y="-332"/>
-        </label>
     </objects>
     <resources>
         <image name="Placeholder" width="60" height="60"/>
