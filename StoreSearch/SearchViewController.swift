@@ -59,8 +59,13 @@ class SearchViewController: UIViewController {
         default: kind = ""
         }
         
+        // let encodedText = searchText.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
         let encodedText = searchText.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
-        let urlString = String(format: "https://itunes.apple.com/search?" + "term=\(encodedText)&limit=200&entity=\(kind)")
+        let initialURL = "https://itunes.apple.com/search?term="
+        let queryLimit = "200"
+        
+        // let urlString = String(format: "https://itunes.apple.com/search?term=\(encodedText)&limit=200&entity=\(kind)")
+        let urlString = initialURL + encodedText + "&limit=" + queryLimit + "&entity=" + kind
         let url = URL(string: urlString)
         return url!
     }
