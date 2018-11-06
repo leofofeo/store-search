@@ -85,7 +85,7 @@
         <scene sceneID="hjq-fV-66N">
             <objects>
                 <viewController id="eRK-BF-Rp7" userLabel="Detail" customClass="DetailViewController" customModule="StoreSearch" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" id="jg1-1C-iet">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="jg1-1C-iet">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -183,7 +183,6 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8Y8-Q9-HQ3" firstAttribute="centerY" secondItem="jg1-1C-iet" secondAttribute="centerY" id="VyX-bN-bHr"/>
                             <constraint firstItem="8Y8-Q9-HQ3" firstAttribute="centerX" secondItem="jg1-1C-iet" secondAttribute="centerX" id="hiC-wa-WVJ"/>
